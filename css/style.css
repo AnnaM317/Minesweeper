@@ -1,0 +1,101 @@
+
+body {
+background: darkslateblue;
+/* color: #DDDDDD; */
+font-family:Verdana, Geneva, Tahoma, sans-serif ;
+/* font-family: courier new; */
+text-align: center;
+/* font-weight: normal; */
+}
+
+.score-container{
+    color: #DDDDDD;
+    margin:auto;
+    width:fit-content;
+}
+
+.timer-container{
+  color: #DDDDDD;
+  margin:auto;
+  width:fit-content;
+  margin-bottom: 10px;
+  /* display: inline-block; */
+  /* border: 5px solid black; */
+}
+  /* background-color: white; */
+  
+
+.board-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  /* display: flex;
+  justify-content: center;
+  margin: 80px 10px; */
+}
+
+.board{
+    display: inline-block;
+    background-color: lightgray;
+}
+
+table{
+    border:solid grey; /**/
+    min-width: Xpx
+}
+
+td {
+    height: 20px;
+    width: 20px;
+    background-color: #C0C0C0;
+    border: 1.5px solid;
+    border-top-color: #ffffff;
+    border-right-color: #7B7B7B;
+    border-bottom-color: #7B7B7B;
+    border-left-color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+
+    white-space:nowrap; /*from collapsing  ?  */
+    min-width:20px; /*from collapsing   */
+    vertical-align:top; 
+
+    cursor: pointer;
+    /* text-indent: -9999px; not show the innertext */
+    min-width: Xpx /*from collapsing*/
+}
+    
+    /* content: "\00a0"; */
+ 
+
+ button{
+   padding: 8px;
+   border-radius: 8px;
+   margin-top: 10px;
+ }
+
+ .show {
+    box-sizing: border-box;
+
+      font-family: "Press Start";
+      /* background-color: #C0C0C0; */
+      background-color: darkgrey;
+      font-size: 100%;
+      text-align: center;
+      border: none;
+  
+      text-indent:initial; /*show inner*/
+      /* min-width: Xpx */
+      white-space:nowrap;
+      min-width:20px;
+      vertical-align:top;
+  
+  }
+
+  .mine{
+    background-color: red;
+  }
+
+
+  /* e.style.backgroundColor = 'red'; //bomb and revealed
+   */
