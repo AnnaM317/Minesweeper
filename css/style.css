@@ -1,20 +1,38 @@
 
 body {
-background: darkslateblue;
+  background-image: url("../img/pic3.jpg"); 
+  background-size:cover;
+/* background: darkslateblue; */
 /* color: #DDDDDD; */
+/* background: darkblue; */
 font-family:Verdana, Geneva, Tahoma, sans-serif ;
 /* font-family: courier new; */
 text-align: center;
 /* font-weight: normal; */
 }
+.header{
+  padding: 8px;
+  margin-top: 10px;
+  font-family:cursive ;
+  /* font-family: courier new; */
+  text-align: center;
+  color: #DDDDDD;
+  margin:auto;
+}
 
-.score-container{
+.lives-container{
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
     color: #DDDDDD;
     margin:auto;
     width:fit-content;
+    padding: 1px;
 }
 
 .timer-container{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 15px;
+  font-weight: bold;
+  /* font-family:Verdana, Geneva, Tahoma, sans-serif ; */
   color: #DDDDDD;
   margin:auto;
   width:fit-content;
@@ -37,16 +55,21 @@ text-align: center;
 .board{
     display: inline-block;
     background-color: lightgray;
+    min-width: Xpx;
+   
 }
 
 table{
     border:solid grey; /**/
-    min-width: Xpx
+    min-width: Xpx;
+    border-collapse: separate;
+    display:block;
+
 }
 
 td {
-    height: 20px;
-    width: 20px;
+    height: 22px;
+    width: 22px;
     background-color: #C0C0C0;
     border: 1.5px solid;
     border-top-color: #ffffff;
@@ -56,45 +79,80 @@ td {
     text-align: center;
     vertical-align: middle;
 
-    white-space:nowrap; /*from collapsing  ?  */
-    min-width:20px; /*from collapsing   */
-    vertical-align:top; 
+    /* white-space:nowrap;  */
+    /* min-width:20px;  */
+    /* vertical-align:top;  */
+    /* min-width: Xpx; */
+    cursor:pointer
 
-    cursor: pointer;
-    /* text-indent: -9999px; not show the innertext */
-    min-width: Xpx /*from collapsing*/
 }
+    /* text-indent: -9999px; not show the innertext */
+        /* table-layout:fixed; */
+    /* min-width: Xpx from collapsing */
+
     
     /* content: "\00a0"; */
  
 
  button{
-   padding: 8px;
+   padding: 10px;
    border-radius: 8px;
-   margin-top: 10px;
+   margin-top: 13px;
+   font-weight: bold;
+   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
  .show {
-    box-sizing: border-box;
+  /* height: 20px;
+  width: 20px; */
+  height: 25px;
+    width: 25px;
+    /* box-sizing: content-box; */
 
       font-family: "Press Start";
       /* background-color: #C0C0C0; */
       background-color: darkgrey;
-      font-size: 100%;
+      /* font-size: 100%; */
       text-align: center;
-      border: none;
-  
-      text-indent:initial; /*show inner*/
+      /* border: none; */
+      border:1.5px none;
+      /* border-spacing: 1px; */
+      /* text-indent:initial; show inner */
       /* min-width: Xpx */
-      white-space:nowrap;
-      min-width:20px;
-      vertical-align:top;
+      /* white-space:nowrap; */
+      /* min-width:20px; */
+      /* vertical-align:top; */
+      /* border-collapse: separate; */
+      /* table-layout:fixed; */
+  }
+  .smiley{
+    font-size:40px;
+    padding:1px;
+    margin-bottom: 8px;
+  } 
+
+  .one {
+    color: purple;
+  }
   
+  .two {
+    color: turquoise;
+  }
+  
+  .three {
+    color:green;
+  }
+  
+  .four{
+    color: pink;
+  }
+  .five {
+    color: blue;
   }
 
-  .mine{
+  /* .mine{
     background-color: red;
-  }
+  } */
 
 
   /* e.style.backgroundColor = 'red'; //bomb and revealed
