@@ -64,8 +64,10 @@ function cellClicked(elCell, i, j) {
         }
     }
     else { //currCell.minesAroundCount === 0
-
         expandShown(gBoard, i, j);
+        if (checkWin()) {
+            win();
+        }
     }
 }
 
@@ -103,9 +105,6 @@ function expandShown(board, cellI, cellJ) {
         addColorToCountMines(elCell, board[cellI][cellJ]);
         elCell.innerHTML = board[cellI][cellJ].minesAroundCount;
         return;
-    }
-    if (checkWin()) {
-        win();
     }
     expandShown(board, cellI - 1, cellJ - 1);
     expandShown(board, cellI - 1, cellJ);
