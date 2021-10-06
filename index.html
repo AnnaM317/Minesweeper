@@ -11,34 +11,24 @@
 
 <body onload="init()">
     <h2 class="header">Minesweeper Game</h2>
-    <!-- <div class="lives-container">
-        <h3>Lives: <span>0</span></h3>
-    </div> -->
+    <div class="lives-container">
+        <h3 class="lives-header">Lives: <span class="span-lives">🤍🤍🤍</span></h3>
+    </div>
     <button class="smiley" onclick="resetGame()">&#128512;</button>
-    <!-- 	lose &#129327; win &#129297;   -->
+    <button class="safe" onclick="safeClick()">🆘</button>
     <div class="timer-container">
         <h2">Timer: <span>00:00</span></h2>
     </div>
     <div class="board-container">
         <div class="board">
-            <!-- <table>
-                <tr>
-                    <td>    </td>
-                </tr>
-            </table> -->
         </div>
     </div>
     <div class="difficulties">
-        <!-- <button onclick="changeDifficultyEasy(4,2)">Easy</button>
-        <button onclick="changeDifficultyMedium(8,12)">Medium</button>
-        <button onclick="changeDifficultyHaed(12,30)">Hard</button> -->
         <button onclick="startGame(4,2)">Easy</button>
         <button onclick="startGame(8,12)">Medium</button>
         <button onclick="startGame(12,30)">Expert</button>
     </div>
-    <!-- <div class="reset">
-        <button>Play Again</button>
-    </div> -->
+    <div class="clicks-left"></div>
     <script src="js/utils.js"></script>
     <script src="js/cell.js"></script>
     <script src="js/main.js"></script>

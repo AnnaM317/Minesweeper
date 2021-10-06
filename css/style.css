@@ -2,37 +2,40 @@
 body {
   background-image: url("../img/pic3.jpg"); 
   background-size:cover;
-/* background: darkslateblue; */
-/* color: #DDDDDD; */
-/* background: darkblue; */
-font-family:Verdana, Geneva, Tahoma, sans-serif ;
-/* font-family: courier new; */
-text-align: center;
-/* font-weight: normal; */
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  text-align: center;
 }
+
 .header{
-  padding: 8px;
+  padding: 5px;
   margin-top: 10px;
   font-family:cursive ;
-  /* font-family: courier new; */
   text-align: center;
   color: #DDDDDD;
   margin:auto;
+  text-decoration: underline;
 }
 
 .lives-container{
-  font-family:Verdana, Geneva, Tahoma, sans-serif ;
-    color: #DDDDDD;
-    margin:auto;
-    width:fit-content;
-    padding: 1px;
+  margin:auto;
+  margin-bottom:none;
+  width:fit-content;
+  padding: 1px;
+  height: fit-content;
+}
+
+.lives-header{
+  font-family:ui-monospace ;
+  font-weight: bold;
+  font-size: 20px;
+  color: #DDDDDD;
+
 }
 
 .timer-container{
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 15px;
   font-weight: bold;
-  /* font-family:Verdana, Geneva, Tahoma, sans-serif ; */
   color: #DDDDDD;
   margin:auto;
   width:fit-content;
@@ -40,9 +43,7 @@ text-align: center;
   /* display: inline-block; */
   /* border: 5px solid black; */
 }
-  /* background-color: white; */
   
-
 .board-container {
   display: block;
   margin: auto;
@@ -53,18 +54,16 @@ text-align: center;
 }
 
 .board{
-    display: inline-block;
-    background-color: lightgray;
-    min-width: Xpx;
-   
+  display: inline-block;
+  background-color: lightgray;
+  min-width: Xpx;
 }
 
 table{
-    border:solid grey; /**/
+    border:solid grey; 
     min-width: Xpx;
     border-collapse: separate;
     display:block;
-
 }
 
 td {
@@ -78,22 +77,12 @@ td {
     border-left-color: #ffffff;
     text-align: center;
     vertical-align: middle;
-
-    /* white-space:nowrap;  */
-    /* min-width:20px;  */
-    /* vertical-align:top;  */
-    /* min-width: Xpx; */
     cursor:pointer
-
-}
     /* text-indent: -9999px; not show the innertext */
-        /* table-layout:fixed; */
+    /* table-layout:fixed; */
     /* min-width: Xpx from collapsing */
-
-    
-    /* content: "\00a0"; */
- 
-
+}
+     
  button{
    padding: 10px;
    border-radius: 8px;
@@ -103,57 +92,94 @@ td {
  }
 
  .show {
-  /* height: 20px;
-  width: 20px; */
-  height: 25px;
+    height: 25px;
     width: 25px;
-    /* box-sizing: content-box; */
-
-      font-family: "Press Start";
-      /* background-color: #C0C0C0; */
-      background-color: darkgrey;
-      /* font-size: 100%; */
-      text-align: center;
-      /* border: none; */
-      border:1.5px none;
-      /* border-spacing: 1px; */
-      /* text-indent:initial; show inner */
-      /* min-width: Xpx */
-      /* white-space:nowrap; */
-      /* min-width:20px; */
-      /* vertical-align:top; */
-      /* border-collapse: separate; */
-      /* table-layout:fixed; */
+    font-family: "Press Start";
+    background-color: darkgrey;
+    text-align: center;
+    border:1.5px none;
+    /* font-size: 100%; */
+    /* border: none; */
+    /* background-color: #C0C0C0; */
+    /* text-indent:initial; show inner */
   }
+
   .smiley{
-    font-size:40px;
+    font-size:34px;
     padding:1px;
     margin-bottom: 8px;
+    padding-bottom: 3px;
   } 
 
+  .safe{
+    font-size:34px;
+    padding:1px;
+    margin-bottom: 8px;
+    padding-bottom: 3px;
+  }
+ 
+  .safe-blink {
+    background-color: yellow;
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .clicks-left{
+    font-family:monospace ;
+    font-size: 16px;
+    color: #DDDDDD;
+    margin:auto;
+    margin-top:15px;
+    width:fit-content;
+    padding: 8px;
+    font-weight: bold;
+  }
+
   .one {
-    color: purple;
+    color: blue;
+    font-weight: bold;
   }
   
   .two {
-    color: turquoise;
+    color: green;
+    font-weight: bold;
   }
   
   .three {
-    color:green;
+    color:red;
+    font-weight: bold;
   }
   
   .four{
-    color: pink;
+    color: darkslateblue;
+    font-weight: bold;
   }
+
   .five {
-    color: blue;
+    color: brown;
+    font-weight: bold;
   }
 
-  /* .mine{
+  .six{
+    color: coral;
+    font-weight: bold;
+  }
+
+  .seven{
+    color:darkgoldenrod;
+    font-weight: bold;
+  }
+
+  .eight{
+    color:blueviolet ;
+    font-weight: bold;
+  }
+
+  .mine{
     background-color: red;
-  } */
-
-
-  /* e.style.backgroundColor = 'red'; //bomb and revealed
-   */
+  }
